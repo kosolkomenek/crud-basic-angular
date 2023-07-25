@@ -1,0 +1,76 @@
+{
+  "employees": [
+    {
+      "firstName": "kosol",
+      "lastName": "komenek",
+      "email": "kosol.komenek@gmail.com",
+      "dob": "1997-07-31T17:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "LSEG",
+      "experience": 4,
+      "salary": 70000,
+      "id": 1
+    },
+    {
+      "firstName": "kosol",
+      "lastName": "komenek",
+      "email": "kosol.komenek@gmail.com",
+      "dob": "1997-07-31T17:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "LSEG",
+      "experience": 4,
+      "salary": 70000,
+      "id": 2
+    },
+    {
+      "firstName": "kosol",
+      "lastName": "komenek",
+      "email": "kosol.komenek@gmail.com",
+      "dob": "1997-07-31T17:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "LSEG",
+      "experience": 4,
+      "salary": 70000,
+      "id": 3
+    },
+    {
+      "firstName": "kosol",
+      "lastName": "komenek",
+      "email": "kosol.komenek@gmail.com",
+      "dob": "1997-07-31T17:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "LSEG",
+      "experience": 4,
+      "salary": 70000,
+      "id": 4
+    },
+    {
+      "firstName": "kosol",
+      "lastName": "komenek",
+      "email": "kosol.komenek@gmail.com",
+      "dob": "1997-07-31T17:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "LSEG",
+      "experience": 4,
+      "salary": 70000,
+      "id": 5
+    },
+    {
+      "firstName": "kosol",
+      "lastName": "komenek",
+      "email": "kosol.komenek@gmail.com",
+      "dob": "1997-07-31T17:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "LSEG",
+      "experience": 4,
+      "salary": 70000,
+      "id": 6
+    }
+  ]
+}
