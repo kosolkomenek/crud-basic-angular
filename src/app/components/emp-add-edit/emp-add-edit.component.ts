@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ApiService } from 'src/app/services/api.service';
 import { SnackBarService } from 'src/app/services/snack-bar.service';
-
+import { faker } from '@faker-js/faker';
 @Component({
   selector: 'app-emp-add-edit',
   templateUrl: './emp-add-edit.component.html',
@@ -19,6 +19,8 @@ export class EmpAddEditComponent implements OnInit {
     'Graduate',
     'Post Graduate',
   ];
+
+  genderList: string[] = ['Male', 'Female', 'Others'];
 
   constructor(
     private _fb: FormBuilder,
@@ -45,6 +47,7 @@ export class EmpAddEditComponent implements OnInit {
   }
 
   onFormSubmit() {
+    this.replaceWithMock();
     if (this.empForm.valid) {
       if (this.data) {
         this._apiService
@@ -70,5 +73,22 @@ export class EmpAddEditComponent implements OnInit {
         });
       }
     }
+  }
+  randomElementInArray(array: any[]) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+  replaceWithMock() {
+    const mock = {
+      firstName: faker.internet.userName(),
+      lastName: faker.internet.userName(),
+      email: faker.internet.email(),
+      dob: faker.date.birthdate(),
+      gender: this.randomElementInArray(this.genderList),
+      education: this.randomElementInArray(this.education),
+      company: faker.company.name(),
+      experience: faker.number.int({ min: 0, max: 20 }),
+      salary: faker.finance.amount(),
+    };
+    this.empForm.patchValue(mock);
   }
 }

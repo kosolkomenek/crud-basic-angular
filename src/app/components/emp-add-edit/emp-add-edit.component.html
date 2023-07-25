@@ -44,9 +44,9 @@
     <div class="row">
       <mat-radio-group aria-label="Select an option" formControlName="gender">
         <mat-label><b>Gender</b></mat-label>
-        <mat-radio-button value="male">Male</mat-radio-button>
-        <mat-radio-button value="female">Female</mat-radio-button>
-        <mat-radio-button value="others">Others</mat-radio-button>
+        <ng-container *ngFor="let value of genderList">
+          <mat-radio-button [value]="value">{{ value }}</mat-radio-button>
+        </ng-container>
       </mat-radio-group>
     </div>
 
